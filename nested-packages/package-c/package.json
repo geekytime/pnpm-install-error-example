@@ -1,0 +1,9 @@
+{
+  "name": "@namespace/package-c",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  }
+}

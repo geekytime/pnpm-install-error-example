@@ -1,0 +1,20 @@
+{
+  "name": "@namespace/package-b",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "license": "UNLICENSED",
+  "files": [
+    "build",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc ./src/index.ts --outDir ./dist",
+    "clean": "rm -rf node_modules && rm -rf dist",
+    "prepare": "pnpm run build"
+  },
+  "devDependencies": {
+    "@namespace/package-c": "workspace:*",
+    "typescript": "^4.9.5"
+  }
+}
